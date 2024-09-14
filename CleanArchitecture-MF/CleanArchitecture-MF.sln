@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.33829.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BE54AAC5-3EA6-4C19-A2CD-7B1027866C61}"
 	ProjectSection(SolutionItems) = preProject
-		.gitignore = .gitignore
+		..\.gitignore = ..\.gitignore
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AD84C9D8-79EB-49D1-8A88-8E4334AA072F}"
@@ -18,15 +18,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{3D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{AC16B14E-FE5C-41A4-A155-D4927B546A5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "..\Domain\Domain.csproj", "{35864E19-1884-4B71-ACF6-1CBD588D445A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "..\Domain\Domain.csproj", "{35864E19-1884-4B71-ACF6-1CBD588D445A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "..\Application\Application.csproj", "{20756F2F-6738-4D49-AF4D-72136D1A55A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "..\Application\Application.csproj", "{20756F2F-6738-4D49-AF4D-72136D1A55A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{3E41DE10-6A98-426B-A2D3-FF93C02B90E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{3E41DE10-6A98-426B-A2D3-FF93C02B90E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "..\Persistence\Persistence.csproj", "{868EB091-98E1-4C5B-A374-F37FAEF6750D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "..\Persistence\Persistence.csproj", "{868EB091-98E1-4C5B-A374-F37FAEF6750D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.API", "..\Web.API\Web.API.csproj", "{367E9910-4C58-47A5-995C-6D036400B9F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.API", "..\Web.API\Web.API.csproj", "{367E9910-4C58-47A5-995C-6D036400B9F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
