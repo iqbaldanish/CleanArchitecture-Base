@@ -1,0 +1,12 @@
+E:\GitHub\CleanArchitecture-Base\Persistence\bin\Debug\net6.0\Persistence.deps.json
+E:\GitHub\CleanArchitecture-Base\Persistence\bin\Debug\net6.0\Persistence.dll
+E:\GitHub\CleanArchitecture-Base\Persistence\bin\Debug\net6.0\ref\Persistence.dll
+E:\GitHub\CleanArchitecture-Base\Persistence\bin\Debug\net6.0\Persistence.pdb
+E:\GitHub\CleanArchitecture-Base\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+E:\GitHub\CleanArchitecture-Base\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub\CleanArchitecture-Base\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+E:\GitHub\CleanArchitecture-Base\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+E:\GitHub\CleanArchitecture-Base\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+E:\GitHub\CleanArchitecture-Base\Persistence\obj\Debug\net6.0\Persistence.dll
+E:\GitHub\CleanArchitecture-Base\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+E:\GitHub\CleanArchitecture-Base\Persistence\obj\Debug\net6.0\Persistence.pdb
