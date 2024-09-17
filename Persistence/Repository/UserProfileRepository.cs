@@ -12,6 +12,8 @@ namespace Persistence.Repository
         public UserProfileRepository(ApplicationDbContext dbContext) => _dbContext = dbContext;
 
         public void Insert(UserProfile userProfile) => _dbContext.Set<UserProfile>().Add(userProfile);
+        //await context.UserProfiles.AddAsync(product);
+        //await context.SaveChangesAsync();
 
         public async Task<UserProfile?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
         {
