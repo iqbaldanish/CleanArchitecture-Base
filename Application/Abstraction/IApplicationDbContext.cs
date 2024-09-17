@@ -6,6 +6,6 @@ namespace Application.Abstraction
 {
     public interface IApplicationDbContext : IUserProfileRepository
     {
-        DbSet<domain.UserProfile> Product { get; set; }
+        DbSet<domain.UserProfile> UserProfile { get; set; }
     }
 }
