@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using MediatR;
 
-using Application.UserProfile.Commands.CreateUserProfile;
-using Application.UserProfile.Queries.GetUserProfileById;
-using Application.UserProfile.Queries.GetUserProfiles;
+using Application.Features.Commands.CreateUserProfile;
+using Application.Features.Queries.GetUserProfileById;
+using Application.Features.Queries.GetUserProfiles;
 
 namespace Web.API.Controllers
 {
@@ -25,7 +25,7 @@ namespace Web.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetUserProfiles(Guid id, CancellationToken cancellationToken)
+        public async Task<IActionResult> GetUserProfiles(int id, CancellationToken cancellationToken)
         {
             var result = await _mediator.Send(new GetUserProfileByIdQuery(id), cancellationToken);
             return Ok(result);
