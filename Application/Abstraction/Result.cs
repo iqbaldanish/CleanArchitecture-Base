@@ -7,11 +7,17 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Application.Abstraction
 {
-    public class Result<T>
+
+    public class Result
     {
         public bool Success { get; set; }
-        public T? Data { get; set; }
         public string? ErrorMessage { get; set; }
+
+    }
+
+    public class Result<T>: Result
+    {        
+        public T? Data { get; set; }        
 
         // For a single item
         public static Result<T> SuccessResult(T data) =>

@@ -1,13 +1,16 @@
 using Application;
-using Infrastructure;
 using Persistence;
-using Presentation;
+using Persistence.Context;
+using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-
+// Register ApplicationDbContext with In-Memory Database
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+        options.UseInMemoryDatabase("InMemoryDb"));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -17,9 +20,8 @@ builder.Services.AddSwaggerGen();
 //Registering services from all the inner layers of CLEAN ARCHITECTURE
 builder.Services
     .AddApplication()
-    .AddInfrastructure()
-    .AddPersistence()
-    .AddPresentation();
+    .AddPersistence();
+    
 
 builder.Services.AddControllers();
 
