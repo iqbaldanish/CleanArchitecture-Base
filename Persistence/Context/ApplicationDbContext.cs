@@ -1,12 +1,16 @@
-﻿using Domain.Repositories;
-using Domain.Entities;
+﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using Application.Abstraction;
+using MediatR;
+
 
 namespace Persistence.Context
 {
-    public sealed class ApplicationDbContext:DbContext, IUnitOfWork
+    public sealed class ApplicationDbContext : DbContext, IApplicationDbContext
     {
-        public ApplicationDbContext(DbContextOptions options)
+        DbSet<UserProfile> IApplicationDbContext.UserProfiles { get ; set ; }
+
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
        : base(options)
         {
             Database.EnsureCreated();

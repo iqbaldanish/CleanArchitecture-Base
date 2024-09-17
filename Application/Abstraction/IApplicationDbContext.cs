@@ -1,10 +1,10 @@
-﻿using Domain.Repositories;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace Application.Abstraction
 {
-    public interface IApplicationDbContext : IUserProfileRepository
+    public interface IApplicationDbContext 
     {
         DbSet<Domain.Entities.UserProfile> UserProfiles { get; set; }
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }
